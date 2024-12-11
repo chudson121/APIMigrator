@@ -33,3 +33,24 @@ can you change the code so it takes the input file and output directory as a com
 ## Prompt 4
 
 if no command line arguments are provided can you ouput a helpful set of instructions on how to properly use this app
+
+## Prompt 5
+
+I received this error "You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API."
+eventually had to manually fix this "response = client.chat.completions.create("
+
+## Prompt 6
+
+how do i make vscode terminal use the virtual environment by default in my project
+
+## Prompt 7
+
+Ran out of the free gpt-4o runs flipped over to Claude
+"I am getting this "Error calling OpenAI API: 'ChatCompletion' object is not subscriptable""
+
+## Prompt 8
+
+i need to modify the code so that when the typescript_code step runs it creates a typescript file with just the code in it and then make the new .ts file available to the refactor, logging, security and final review steps
+
+## Example
+python .\APIMigrator.py "E:\SourceCode\CHHJIT\hunkware-API\v1\accounts\addresses.get.php"  "E:\SourceCode\CHHJIT\Migration"
