@@ -1,10 +1,13 @@
 # APIMigrator
+
 convert code from one programming language to another and make it all better
 
-# first ai prompt
-I want to feed a php file into the application, have ai review the code, create a suite of unit tests for the code in typescript for node.js, create the source code in node.js, refactor the code using SOLID principles and industry best practices, ensure logging occurs, and make it more secure. can you help me make the ai prompts needed for all these steps. I want the outputted source code to developed as if a principal software engineer created the code. 
+## first ai prompt
 
-## results:
+I want to feed a php file into the application, have ai review the code, create a suite of unit tests for the code in typescript for node.js, create the source code in node.js, refactor the code using SOLID principles and industry best practices, ensure logging occurs, and make it more secure. can you help me make the ai prompts needed for all these steps. I want the outputted source code to developed as if a principal software engineer created the code.
+
+### results
+
 Analyze the following PHP code for functionality, structure, and potential issues. Provide a detailed explanation of what the code does, any identified inefficiencies, and areas for improvement. Include recommendations to enhance readability, maintainability, and scalability following SOLID principles and industry best practices.
 
 Based on the functionality of the provided PHP code, generate a comprehensive suite of unit tests in TypeScript for a Node.js environment. Ensure the tests cover all critical scenarios, edge cases, and error handling. Use a professional, best-practices approach, as if authored by a principal software engineer. Assume the use of a popular testing framework like Jest.
@@ -19,9 +22,14 @@ Review the following TypeScript code for potential security vulnerabilities and 
 
 Review the following TypeScript code as if you are a principal software engineer. Ensure it adheres to industry best practices, follows a clean and professional code style, and is optimized for performance and maintainability. Provide any additional refinements to enhance quality, including comments and documentation.
 
+## Prompt 2
 
-# Prompt 2
 Yes please design a python application that implements this workflow
 
-# Prompt 3
+## Prompt 3
+
 can you change the code so it takes the input file and output directory as a command line argument
+
+## Prompt 4
+
+if no command line arguments are provided can you ouput a helpful set of instructions on how to properly use this app
