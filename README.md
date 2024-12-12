@@ -36,7 +36,7 @@ if no command line arguments are provided can you ouput a helpful set of instruc
 
 ## Prompt 5
 
-I received this error "You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API."
+I received this error "You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at [https://github.com/openai/openai-python] for the API."
 eventually had to manually fix this "response = client.chat.completions.create("
 
 ## Prompt 6
@@ -52,5 +52,24 @@ Ran out of the free gpt-4o runs flipped over to Claude
 
 i need to modify the code so that when the typescript_code step runs it creates a typescript file with just the code in it and then make the new .ts file available to the refactor, logging, security and final review steps
 
+## Prompt 9
+
+I also need the unit tests to be created in a separate file as well and i want the unit test and code file so they can be executed immediately any findings or conversation from the prompt should go into the text files
+
+## Prompt 10
+
+i am building an api migration tool to migrate old php legacy code, create unit tests, create modern typescript (nodejs) code, ensuring we refactor it using SOLID patterns. I need to modify the generate prompt section as i want to use the old php code to review it, feed that information into the unit test prompt, and then use the unit test output in the tyepscript_code section. Once i have the typescript code i want to use the new code file in the refactor, logging, security and final review steps
+
+## Prompt 11
+
+I think there is a flaw in the prompt logic "Error calling OpenAI API: Error code: 500 - {'error': {'message': 'Timed out generating response. Please try again with a shorter prompt or with max_tokens set to a lower value" it looks like we are building all the prompts at the start, but what we need to do is run the first steps of review, unit_tests, and typescript_code with the old php code
+
+Once the tyepscript_code is generated, then we need to build the remaining steps with the output from the ai calls. for example once we have typescript code we should send that code into the prompt to refactor, take the output from refactor and use that in the logging, take the output of logging and use that for the security prompt, the security ouput goes into the final_review and output the updated typescript code file that we are building
+
+## Prompt 12
+
+we need to refactor the generate_prompts what if we created functions for each of the steps instead of using ifs and elif
+
 ## Example
+
 python .\APIMigrator.py "E:\SourceCode\CHHJIT\hunkware-API\v1\accounts\addresses.get.php"  "E:\SourceCode\CHHJIT\Migration"
